@@ -117,79 +117,10 @@ function HomePage() {
 
       <hr className="homepage__divider" />
 
-      {/* <div className="articles__container">
-        <p className="articles__heading">Latest Articles</p>
 
-        <div className="articles__articles">
-          <div className="articles__article">
-            <p className="articles__title">
-              Balancing Hobbies and Coding: How Hiking and Rock Climbing Help Me
-              Stay Motivated
-            </p>
-            <small className="articles__date">February 18, 2025</small>
-          </div>
-
-          <div className="articles__article">
-            <p className="articles__title">
-              Reading for Inspiration: 5 Books That Shaped My Coding Journey
-            </p>
-            <small className="articles__date">February 15, 2025</small>
-          </div>
-
-          <div className="articles__article">
-            <p className="articles__title">
-              Overcoming Imposter Syndrom as a New Developer
-            </p>
-            <small className="articles__date">February 10, 2025</small>
-          </div>
-
-          <div className="articles__article">
-            <p className="articles__title">
-              Exploring the World of Responsive Design
-            </p>
-            <small className="articles__date">February 4, 2025</small>
-          </div>
-
-          <div className="articles__article">
-            <p className="articles__title">
-              My Favorite Dev Tools for Productivity
-            </p>
-            <small className="articles__date">Jauary 29, 2025</small>
-          </div>
-        </div>
-
-        <Link to="/blog" id="blog_link">
-          View all articles
-        </Link>
-      </div> */}
       <Articles />
       <hr className="homepage__divider homepage__divider--last" />
 
-      {/* <footer className="footer">
-        <p className="footer__text">Made with ❤️ and ☕️</p>
-        <ul className="footer__socials">
-          <li className="footer__socials-link">
-            <a href="">
-              <TwitterIcon />
-            </a>
-          </li>
-          <li className="footer__socials-link">
-            <a href="">
-              <GithubIcon />
-            </a>
-          </li>
-          <li className="footer__socials-link">
-            <a href="">
-              <LinkedInIcon />
-            </a>
-          </li>
-          <li className="footer__socials-link">
-            <a href="">
-              <FrontendIcon />
-            </a>
-          </li>
-        </ul>
-      </footer> */}
     </div>
   );
 }

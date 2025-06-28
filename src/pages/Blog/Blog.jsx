@@ -114,7 +114,6 @@ function Blog() {
             I share the reasons behind my shift to front-end development and why this path excites me.
           </p>
         </div>
-        <hr className="divider divider--last" />
       </div>
     </div>
   )

@@ -3,9 +3,21 @@
 @use "../../styles/partials/typography" as *;
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+  &__rule {
+    border: none;
+    margin-bottom: 1rem;
+    height: 1px;
+    background-color: var(--border);
+    margin-top: 1.5rem;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   &__text {
     @extend .tp-8;
     color: var(--blurb-txt);
@@ -14,7 +26,7 @@
     list-style-type: none;
     display: flex;
     gap: 1rem;
-    
+
     &-link {
       img {
         height: 1.125rem;

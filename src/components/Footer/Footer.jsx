@@ -73,6 +73,8 @@ function FrontendIcon() {
 function Footer() {
   return (
     <footer className="footer">
+      <hr className="footer__rule" />
+      <div className="footer__content">
         <p className="footer__text">Made with ❤️ and ☕️</p>
         <ul className="footer__socials">
           <li className="footer__socials-link">
@@ -96,6 +98,7 @@ function Footer() {
             </a>
           </li>
         </ul>
+        </div>
       </footer>
   )
 }
