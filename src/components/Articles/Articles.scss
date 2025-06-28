@@ -1,0 +1,49 @@
+@use "../../styles/partials/globals" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+
+.articles {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing32;
+  }
+
+  &__articles {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing24;
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing8;
+  }
+
+  &__heading {
+    @extend .tp-2;
+    color: var(--title);
+    
+
+    &::after {
+      display: inline-block;
+      content: "";
+      width: 2.5rem;
+      height: 3px;
+      background-color: $blue500;
+      margin-left: 0.625rem;
+      vertical-align: -0.2rem;
+    }
+  }
+
+  &__title {
+    @extend .tp-5;
+    color: var(--title)
+  }
+
+  &__date {
+    @extend .tp-8-ital;
+    color: var(--blurb-txt);
+  }
+}

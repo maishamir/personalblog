@@ -1,0 +1,66 @@
+@use "../../styles/partials/globals" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.blog {
+  &__heading {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      @extend .tp-2;
+      color: var(--title);
+      &::after {
+        display: inline-block;
+        content: "";
+        width: 2.5rem;
+        height: 3px;
+        background-color: $blue500;
+        margin-left: 0.625rem;
+        vertical-align: -0.2rem;
+      }
+    }
+
+    &-blurb {
+      @extend .tp-7;
+      color: var(--blurb-txt);
+    }
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing8;
+    &-title {
+      @extend .tp-5;
+      color: var(--title);
+      cursor: pointer;
+    }
+
+    &-date {
+      @extend .tp-8-ital;
+      color: var(--blurb-txt);
+    }
+
+    &-desc {
+      @extend .tp-7;
+      color: var(--blurb-txt);
+    }
+  }
+}
+
+.divider {
+  margin: $spacing20 0;
+  border: none;
+  height: 1px;
+  background-color: var(--border);
+
+  &--first {
+    margin-top: $spacing24;
+  }
+
+  &--last {
+    margin: $spacing32 0 $spacing16 0;
+  }
+}
