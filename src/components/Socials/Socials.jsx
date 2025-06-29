@@ -1,9 +1,5 @@
 import React from "react";
-import "./HomePage.scss";
-import frontend from "../../assets/images/logo-frontend-mentor.svg";
-import { Link } from "react-router-dom";
-import Articles from "../../components/Articles/Articles";
-import Socials from "../../components/Socials/Socials";
+import "./Socials.scss";
 
 function TwitterIcon() {
   return (
@@ -73,55 +69,31 @@ function FrontendIcon() {
   );
 }
 
-function HomePage() {
+function Socials() {
   return (
-    <div className="homepage">
-      <h1 className="homepage__title">Hi, I'm Paulina 👋</h1>
-
-      <div className="homepage__blurb">
-        <p>
-          I'm on a journey to become a front-end web developer. I love building
-          little projects, trying out new coding techniques, and sharing what I
-          learn along the way. When I'm not at my desk, you'll find me reading,
-          hiking through the mountains, or challenging myself on rock-climbing
-          walls.
-        </p>
-        <p>
-          I started this blog to document my progress, keep myself accountable,
-          and hopefully inspire anyone else who's learning to code. Welcome to
-          my corner of the internet, and thanks for stopping by!
-        </p>
-      </div>
-
-      {/* <ul className="socials">
-        <li className="socials-link">
-          <a href="">
-            <TwitterIcon />
-          </a>
-        </li>
-        <li className="socials-link">
-          <a href="">
-            <GithubIcon />
-          </a>
-        </li>
-        <li className="socials-link">
-          <a href="">
-            <LinkedInIcon />
-          </a>
-        </li>
-        <li className="socials-link">
-          <a href="">
-            <FrontendIcon />
-          </a>
-        </li>
-      </ul> */}
-      <Socials />
-      <hr className="homepage__divider" />
-      
-      <Articles />
-
-    </div>
+    <ul className="socials">
+      <li className="socials-link">
+        <a href="">
+          <TwitterIcon />
+        </a>
+      </li>
+      <li className="socials-link">
+        <a href="">
+          <GithubIcon />
+        </a>
+      </li>
+      <li className="socials-link">
+        <a href="">
+          <LinkedInIcon />
+        </a>
+      </li>
+      <li className="socials-link">
+        <a href="">
+          <FrontendIcon />
+        </a>
+      </li>
+    </ul>
   );
 }
 
-export default HomePage;
+export default Socials;

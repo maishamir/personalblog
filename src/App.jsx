@@ -10,6 +10,7 @@ import "./App.scss";
 import Footer from "./components/Footer/Footer";
 import Blog from "./pages/Blog/Blog";
 import BlogPost from "./pages/SingleBlog/BlogPost";
+import About from "./pages/About/About";
 
 function App() {
   const [toggleNav, setToggleNav] = useState(false)
@@ -40,6 +41,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/3" element={<BlogPost />} />
+            <Route path="/about" element={<About />} />
           </Routes>
           <Footer />
         </div>
